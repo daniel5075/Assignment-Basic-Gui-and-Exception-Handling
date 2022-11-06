@@ -16,7 +16,7 @@ namespace Assignment_Basic_Gui_and_Exception_Handling
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new startMenu());
         }
     }
 }
