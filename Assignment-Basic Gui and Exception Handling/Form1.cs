@@ -50,13 +50,43 @@ namespace Assignment_Basic_Gui_and_Exception_Handling
                 else
                 {
                     MessageBox.Show("Thank you for selecting your level");
-                }
-
-               
+                }           
             }
             catch //Message displays if not a valid number (Not an integer)
             {
                 MessageBox.Show("Not a valid number");
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Purple.Checked == true)
+            {
+                MessageBox.Show("What a cool color for a snake");
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Blue.Checked == true)
+            {
+                MessageBox.Show("One of my favorite colors");
+            }
+        }
+
+        private void Green_CheckedChanged(object sender, EventArgs e)
+        {
+             if (Green.Checked == true)
+            {
+                MessageBox.Show("Ah. the classic snake color");
+            }
+        }
+
+        private void Black_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Black.Checked == true)
+            {
+                MessageBox.Show("Spooky");
             }
         }
     }
