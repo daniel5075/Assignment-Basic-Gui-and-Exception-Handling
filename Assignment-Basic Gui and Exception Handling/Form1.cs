@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Daniel Groveman
+ * MS539 Programming Concepts
+ * I thought this project would take about an hour, but I think it took more like 4 hours, but most of that was problems utilizing Github and VisualStudio kept not working.  
+ * Once I discovered fixes for those problems, the actual programming of this was probably about two hours.  A lot of that time, was trying to figure out how to nest my error handlers. 
+ * Definitely a good learning experience.
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +17,9 @@ using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
+
 
 namespace Assignment_Basic_Gui_and_Exception_Handling
 {
