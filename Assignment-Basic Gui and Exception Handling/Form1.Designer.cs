@@ -36,6 +36,9 @@
             this.Blue = new System.Windows.Forms.RadioButton();
             this.Green = new System.Windows.Forms.RadioButton();
             this.Black = new System.Windows.Forms.RadioButton();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.buttonName = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,11 +124,44 @@
             this.Black.UseVisualStyleBackColor = true;
             this.Black.CheckedChanged += new System.EventHandler(this.Black_CheckedChanged);
             // 
+            // nameBox
+            // 
+            this.nameBox.Location = new System.Drawing.Point(198, 446);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 20);
+            this.nameBox.TabIndex = 5;
+            this.nameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(23, 446);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(169, 20);
+            this.labelName.TabIndex = 6;
+            this.labelName.Text = "What is your Name?";
+            this.labelName.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // buttonName
+            // 
+            this.buttonName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonName.Location = new System.Drawing.Point(316, 443);
+            this.buttonName.Name = "buttonName";
+            this.buttonName.Size = new System.Drawing.Size(75, 31);
+            this.buttonName.TabIndex = 7;
+            this.buttonName.Text = "Enter";
+            this.buttonName.UseVisualStyleBackColor = true;
+            this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
+            // 
             // startMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 575);
+            this.Controls.Add(this.buttonName);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.nameBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listLevel);
             this.Controls.Add(this.labelLevel);
@@ -149,6 +185,9 @@
         private System.Windows.Forms.RadioButton Green;
         private System.Windows.Forms.RadioButton Blue;
         private System.Windows.Forms.RadioButton Purple;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Button buttonName;
     }
 }
 

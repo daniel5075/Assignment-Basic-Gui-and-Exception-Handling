@@ -58,7 +58,7 @@ namespace Assignment_Basic_Gui_and_Exception_Handling
             }
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)  //Displays message box with comment on color chosen
         {
             if (Purple.Checked == true)
             {
@@ -88,6 +88,23 @@ namespace Assignment_Basic_Gui_and_Exception_Handling
             {
                 MessageBox.Show("Spooky");
             }
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonName_Click(object sender, EventArgs e)  
+        {
+            string fName = nameBox.Text;
+
+            MessageBox.Show("Welcome " + fName); //On pressing enter displays Welcome and Name entered in text box
         }
     }
 }
